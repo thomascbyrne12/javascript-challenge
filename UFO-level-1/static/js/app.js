@@ -21,15 +21,17 @@ var filter_button = d3.select('#filter-btn')
 
 filter_button.on('click', function() {
 
-  //d3.event.preventDefault();
+  d3.event.preventDefault();
 
   var filter_table_input = d3.select('#datetime');
+
+  console.log(filter_table_input);
 
   var fitler_table_input_value = filter_table_input.property('value');
 
   console.log(fitler_table_input_value);
 
-  var filtered_dates = tableData.filter(tableData => tableData.datetime === filter_table_date_value);
+  var filtered_dates = tableData.filter(tableData => tableData.datetime === filter_table_input_value);
 
   d3.select('tbody').html('');
 
