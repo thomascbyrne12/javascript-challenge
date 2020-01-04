@@ -19,7 +19,7 @@ data.forEach(function (sighting) {
 // connect to filter button
 var filter_button = d3.select('#filter-btn')
 
-filter_button.on('click', function()) {
+filter_button.on('click', function() {
 
     d3.event.peverntDefault();
 
@@ -42,5 +42,5 @@ filter_button.on('click', function()) {
             var cell = row.append('td');
             cell.text(value);
         });
-    }
-};
+    });
+});
