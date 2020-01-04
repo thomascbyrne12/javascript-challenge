@@ -21,7 +21,7 @@ var filter_button = d3.select('#filter-btn')
 
 filter_button.on('click', function () {
 
-  d3.event.peverntDefault();
+  d3.event.perventDefault();
 
   var filter_table_input = d3.select('#datetime');
 
