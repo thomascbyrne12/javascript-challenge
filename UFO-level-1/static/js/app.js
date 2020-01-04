@@ -19,9 +19,9 @@ data.forEach(function (sighting) {
 // connect to filter button
 var filter_button = d3.select('#filter-btn')
 
-filter_button.on('click', function () {
+filter_button.on('click', function() {
 
-  d3.event.preventDefault();
+  //d3.event.preventDefault();
 
   var filter_table_input = d3.select('#datetime');
 
